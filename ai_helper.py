@@ -13,7 +13,7 @@ except FileNotFoundError:
 
 legal_actions=actions
 
-def get_combat_actions(game):
+def get_combat_actions(game,actions):
     other_cards = [card for card in game.hand if (card.is_playable and not card.has_target)]
     targeted_cards = [card for card in game.hand if (card.is_playable and card.has_target)]
     available_monsters = [monster for monster in game.monsters if monster.current_hp > 0 and not monster.half_dead and not monster.is_gone]
@@ -59,5 +59,5 @@ def get_combat_actions(game):
 
 
 def get_oocombat_actions(game):
-    pass
+    
 
