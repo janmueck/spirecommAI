@@ -1,0 +1,1 @@
+This is at this point a little tool to extract the action space and game state of slay the spire through spirecomm
